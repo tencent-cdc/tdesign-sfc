@@ -2,7 +2,7 @@
   "name": "tdesign-sfc",
   "version": "0.0.2",
   "description": "基于sfcjs的tdesign web components版本",
-  "main": "dist/index.js",
+  "main": "dist/dist.js",
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint --ext .js build packages",
