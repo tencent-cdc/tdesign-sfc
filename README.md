@@ -79,7 +79,7 @@
 | type | string | button | 组件类型，和 html button 的 type 一致 | N |
 | variant | string | base | 按钮形式，支持：base, outline, dashed, text | N |
 
-可通过 [Demo](https://unpkg.com/examples/t-button/index.html) 查看所有按钮效果。
+可通过 [Demo](https://unpkg.com/tdesign-sfc/examples/t-button/index.html) 查看所有按钮效果。
 
 支持如下事件：
 
@@ -100,4 +100,4 @@
 | size | string | medium | 尺寸，支持：10px, 1em 等 | N |
 | color | string | - | 颜色，支持：red 或 #f1f1f1 等颜色形式 | N |
 
-可通过查看 [Demo](https://unpkg.com/examples/t-icon/index.html) 页面获得全部图标名。
+可通过查看 [Demo](https://unpkg.com/tdesign-sfc/examples/t-icon/index.html) 页面获得全部图标名。
