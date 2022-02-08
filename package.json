@@ -1,6 +1,6 @@
 {
   "name": "tdesign-sfc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于sfcjs的tdesign web components版本",
   "main": "dist/dist.js",
   "scripts": {
