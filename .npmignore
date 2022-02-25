@@ -1,3 +1,5 @@
 .babelrc
 .eslintrc
 /build/
+.husky/
+.vscode/
