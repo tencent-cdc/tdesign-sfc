@@ -50,6 +50,13 @@
   function handleClick(e) {
     emit('click', e);
   }
+
+  function handleRipple(e) {
+    if (disabled) {
+      return;
+    }
+    handleShowRippler(e);
+  }
 </script>
 
 <style>
@@ -1161,7 +1168,7 @@
 
 <button
   class="t-button" (class)="classNameString"
-  @click="handleClick(event)" @pointerdown="handleShowRippler(event)"
+  @click="handleClick(event)" @pointerdown="handleRipple(event)"
   :disabled="disabled" :type="type">
   <slot></slot>
 </button>
