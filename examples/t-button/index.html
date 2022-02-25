@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<script src="https://unpkg.com/sfcjs"></script>
+<script src="../../dist/t-button/index.js"></script>
+<script src="../../dist/t-icon/index.js"></script>
+
+<h3>基础按钮</h3>
+<t-button>填充按钮</t-button>
+<t-button variant="outline">描边按钮</t-button>
+<t-button variant="dashed">虚框按钮</t-button>
+<t-button variant="text">文字按钮</t-button>
+
+<h3>不同颜色主题</h3>
+<p>
+  <t-button>填充按钮</t-button>
+  <t-button variant="outline">描边按钮</t-button>
+  <t-button variant="dashed">虚框按钮</t-button>
+  <t-button variant="text">文字按钮</t-button>
+</p>
+<p>
+  <t-button theme="primary">填充按钮</t-button>
+  <t-button variant="outline" theme="primary">描边按钮</t-button>
+  <t-button variant="dashed" theme="primary">虚框按钮</t-button>
+  <t-button variant="text" theme="primary">文字按钮</t-button>
+</p>
+<p>
+  <t-button theme="danger">填充按钮</t-button>
+  <t-button variant="outline" theme="danger">描边按钮</t-button>
+  <t-button variant="dashed" theme="danger">虚框按钮</t-button>
+  <t-button variant="text" theme="danger">文字按钮</t-button>
+</p>
+<p>
+  <t-button theme="warning">填充按钮</t-button>
+  <t-button variant="outline" theme="warning">描边按钮</t-button>
+  <t-button variant="dashed" theme="warning">虚框按钮</t-button>
+  <t-button variant="text" theme="warning">文字按钮</t-button>
+</p>
+<p>
+  <t-button theme="success">填充按钮</t-button>
+  <t-button variant="outline" theme="success">描边按钮</t-button>
+  <t-button variant="dashed" theme="success">虚框按钮</t-button>
+  <t-button variant="text" theme="success">文字按钮</t-button>
+</p>
+
+
+<h3>幽灵按钮</h3>
+<section style="background-color: #181818;padding: 15px;">
+  <p>
+    <t-button variant="outline" ghost>描边按钮</t-button>
+    <t-button variant="dashed" ghost>虚框按钮</t-button>
+    <t-button variant="text" ghost>文字按钮</t-button>
+  </p>
+  <p>
+    <t-button variant="outline" theme="primary" ghost>描边按钮</t-button>
+    <t-button variant="dashed" theme="primary" ghost>虚框按钮</t-button>
+    <t-button variant="text" theme="primary" ghost>文字按钮</t-button>
+  </p>
+  <p>
+    <t-button variant="outline" theme="danger" ghost>描边按钮</t-button>
+    <t-button variant="dashed" theme="danger" ghost>虚框按钮</t-button>
+    <t-button variant="text" theme="danger" ghost>文字按钮</t-button>
+  </p>
+  <p>
+    <t-button variant="outline" theme="warning" ghost>描边按钮</t-button>
+    <t-button variant="dashed" theme="warning" ghost>虚框按钮</t-button>
+    <t-button variant="text" theme="warning" ghost>文字按钮</t-button>
+  </p>
+  <p>
+    <t-button variant="outline" theme="success" ghost>描边按钮</t-button>
+    <t-button variant="dashed" theme="success" ghost>虚框按钮</t-button>
+    <t-button variant="text" theme="success" ghost>文字按钮</t-button>
+  </p>
+</section>
+
+<h3>禁用</h3>
+<t-button disabled>被禁用按钮</t-button>
+
+<h3>块按钮</h3>
+<t-button block>长块按钮</t-button>
+
+<h3>椭圆按钮</h3>
+<t-button shape="round">椭圆按钮</t-button>
+
+<h3>不同尺寸</h3>
+<t-button size="small">小按钮</t-button>
+<t-button size="medium">默认按钮</t-button>
+<t-button size="large">大按钮</t-button>
+
+<h3>图标按钮</h3>
+<t-button>
+  <t-icon name="add"></t-icon>
+</t-button>
+<t-button shape="circle">
+  <t-icon name="add"></t-icon>
+</t-button>
+<t-button>
+  <t-icon name="add"></t-icon>
+  <span>添加</span>
+</t-button>
+<t-button size="l">
+  <t-icon name="control-platform"></t-icon>
+  <span>添加</span>
+</t-button>

@@ -1,0 +1,7 @@
+node_modules/
+dist/*/
+dist/*.js
+dist/*.js.map
+/index.js
+/index.js.map
+/examples/index.html

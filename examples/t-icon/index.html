@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<style>
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    width: 120px;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    margin: 5px;
+    padding: 5px;
+  }
+  .icon-el {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-name {
+    font-size: 12px;
+    text-align: center;
+  }
+  .icons {
+    padding-bottom: 30px;
+  }
+  .icons::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+</style>
+
+<script src="https://unpkg.com/sfcjs"></script>
+<script src="../../dist/t-icon/index.js"></script>
+
+<h3>所有图标</h3>
+<div id="icons" class="icons"></div>
+
+<h3>颜色</h3>
+<t-icon name="star-filled" color="blue" size="32px"></t-icon>
+<t-icon name="sound" color="#984533" size="32px"></t-icon>
+
+<h3>尺寸</h3>
+<p>16px: <t-icon name="star-filled" size="16px"></t-icon> </p>
+<p>20px: <t-icon name="star-filled" size="20px"></t-icon> </p>
+<p>3em: <t-icon name="star-filled" size="3em"></t-icon> </p>
+
+<script>
+  const icons = ['add-circle','add-rectangle','add','app','arrow-down-rectangle','arrow-down','arrow-left','arrow-right','arrow-up','attach','backtop-rectangle','backtop','backward','barcode','books','browse-off','browse','bulletpoint','calendar','call','caret-down-small','caret-down','caret-left-small','caret-left','caret-right-small','caret-right','caret-up-small','caret-up','cart','chart-bar','chart-bubble','chart-pie','chart','chat','check-circle-filled','check-circle','check-rectangle-filled','check-rectangle','check','chevron-down-circle','chevron-down-rectangle','chevron-down','chevron-left-circle','chevron-left-double','chevron-left-rectangle','chevron-left','chevron-right-circle','chevron-right-double','chevron-right-rectangle','chevron-right','chevron-up-circle','chevron-up-rectangle','chevron-up','circle','clear','close-circle-filled','close-circle','close-rectangle','close','cloud-download','cloud-upload','cloud','code','control-platform','creditcard','dashboard','delete','desktop','discount-filled','discount','download','edit-1','edit','ellipsis','enter','error-circle-filled','error-circle','error','file-add','file-copy','file-excel','file-image','file-paste','file-pdf','file-powerpoint','file-unknown','file-word','file','filter-clear','filter','flag','folder-add','folder-open','folder','fork','format-horizontal-align-bottom','format-horizontal-align-center','format-horizontal-align-top','format-vertical-align-center','format-vertical-align-left','format-vertical-align-right','forward','fullscreen-exit','fullscreen','gender-female','gender-male','gift','heart-filled','heart','help-circle-filled','help-circle','help','history','home','hourglass','image','info-circle-filled','info-circle','internet','jump','laptop','layers','link-unlink','link','loading','location','lock-off','lock-on','login','logo-android','logo-apple-filled','logo-apple','logo-chrome-filled','logo-chrome','logo-codepen','logo-github-filled','logo-github','logo-ie-filled','logo-ie','logo-windows-filled','logo-windows','logout','mail','menu-fold','menu-unfold','minus-circle-filled','minus-circle','minus-rectangle','mobile-vibrate','mobile','money-circle','more','move','next','notification-filled','notification','order-adjustment-column','order-ascending','order-descending','page-first','page-last','pause-circle-filled','photo','pin','play-circle-filled','play-circle-stroke','play-circle','play','poweroff','precise-monitor','previous','print','qrcode','queue','rectangle','refresh','remove','rollback','root-list','round','save','scan','search','secured','server','service','setting','share','shop','slash','sound','star-filled','star','stop-circle-1','stop-circle-filled','stop-circle','stop','swap-left','swap-right','swap','thumb-down','thumb-up','time-filled','time','tips','tools','unfold-less','unfold-more','upload','usb','user-add','user-avatar','user-circle','user-clear','user-talk','user','usergroup-add','usergroup-clear','usergroup','video','view-column','view-list','view-module','wallet','wifi','zoom-in','zoom-out'];
+  let html = '';
+  icons.forEach((icon) => {
+    html += `
+      <div class="icon-box">
+        <div class="icon-el"><t-icon name="${icon}" size="32px"></t-icon></div>
+        <div class="icon-name">${icon}</div>
+      </div>
+    `;
+  });
+  document.querySelector('#icons').innerHTML = html;
+</script>
