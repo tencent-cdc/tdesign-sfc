@@ -1,6 +1,6 @@
 # TDesign
 
-基于 [SFCJS](https://github.com/tencent-cdc/sfcjs) 的 TDesign Web Components 版本，帮助你在你的项目中立即使用 tdesign.
+基于 [SFCJS](https://github.com/tencent-cdc/sfcjs) 的 [TDesign](https://tdesign.tencent.com) Web Components 版本，帮助你在你的项目中立即使用 tdesign.
 
 ## 快速使用
 
